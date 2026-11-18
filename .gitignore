@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+dist/
+.DS_Store
+Thumbs.db
+
+# Webサイト表示に不要な開発・元データ・ローカル用ファイル
+data_master/
+data_raw/
+data/*.json
+*.py
+start-lan-server.bat
+start-lan-server.ps1
+SPEC.md
+verification_report_520.md

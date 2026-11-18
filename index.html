@@ -67,19 +67,12 @@
             <span id="ui-inst-dont-show">次回から表示しない</span>
           </label>
         </div>
-
-        <!-- モバイル用タブ切り替えバー -->
-        <nav class="mobile-tabs" role="tablist" aria-label="操作セクション切り替え">
-          <button type="button" class="mobile-tab active" data-tab="tab-select" role="tab" aria-selected="true" id="ui-tab-select">マップ・王</button>
-          <button type="button" class="mobile-tab" data-tab="tab-filter" role="tab" aria-selected="false" id="ui-tab-filter">絞り込み状況</button>
-          <button type="button" class="mobile-tab" data-tab="tab-details" role="tab" aria-selected="false" id="ui-tab-details">確定パターン詳細</button>
-        </nav>
       </header>
 
       <!-- パネル本体スクロール領域 -->
       <div class="panel-body" id="panel-scroll-container">
         <!-- セクション1: 絞り込み状況 & アクション -->
-        <section id="section-filter" class="panel-section" data-tab-section="tab-filter">
+        <section id="section-filter" class="panel-section">
           <div class="section-header">
             <h2 class="section-title" id="ui-filter-heading">絞り込み・判定状況</h2>
             <button id="reset-all-btn" type="button" class="btn btn-danger-outline btn-xs">条件リセット</button>
@@ -114,7 +107,7 @@
         </section>
 
         <!-- セクション2: マップ（地変）と夜の王の選択 -->
-        <section id="section-select" class="panel-section active-mobile-section" data-tab-section="tab-select">
+        <section id="section-select" class="panel-section">
           <!-- マップ（地変）切り替え -->
           <div class="selector-block">
             <div class="section-header">
@@ -148,7 +141,7 @@
         </section>
 
         <!-- セクション3: 確定パターンの詳細情報リスト -->
-        <section id="section-details" class="panel-section" data-tab-section="tab-details">
+        <section id="section-details" class="panel-section">
           <details id="details-accordion" class="details-accordion">
             <summary id="details-toggle-btn" class="section-header section-toggle-btn">
               <h2 class="section-title" id="ui-details-heading">確定パターン詳細</h2>

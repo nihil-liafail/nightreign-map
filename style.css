@@ -88,8 +88,7 @@ button {
     overflow: hidden;
   }
 
-  .sheet-handle-bar,
-  .mobile-tabs {
+  .sheet-handle-bar {
     display: none !important;
   }
 
@@ -156,14 +155,6 @@ button {
   .control-panel.sheet-expanded {
     height: 68dvh;
     max-height: 580px;
-  }
-
-  .panel-section {
-    display: none;
-  }
-
-  .panel-section.active-mobile-section {
-    display: block;
   }
 }
 
@@ -355,32 +346,6 @@ button {
   font-size: 11px;
   color: var(--text-muted);
   cursor: pointer;
-}
-
-/* Mobile Tabs */
-.mobile-tabs {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4px;
-  margin-top: 8px;
-  background-color: var(--bg-app);
-  padding: 3px;
-  border-radius: 6px;
-}
-
-.mobile-tab {
-  padding: 5px 4px;
-  font-size: 11px;
-  font-weight: 600;
-  color: var(--text-muted);
-  border-radius: 4px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.mobile-tab.active {
-  background-color: var(--bg-card);
-  color: var(--accent-amber-light);
 }
 
 /* ============================================================================

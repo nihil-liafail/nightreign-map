@@ -227,7 +227,6 @@
     selectedMajorBase: null, // Record<baseKey, {type, element}> | null
     selectedPatternIndex: null,
     sheetMode: "half", // "collapsed" | "half" | "expanded"
-    activeMobileTab: "tab-select",
 
     // Master Data
     coordinatesMaster: null,
@@ -267,10 +266,6 @@
     dom.uiInstStep2 = document.getElementById("ui-inst-step2");
     dom.uiInstStep3 = document.getElementById("ui-inst-step3");
     dom.uiInstDontShow = document.getElementById("ui-inst-dont-show");
-
-    dom.uiTabSelect = document.getElementById("ui-tab-select");
-    dom.uiTabFilter = document.getElementById("ui-tab-filter");
-    dom.uiTabDetails = document.getElementById("ui-tab-details");
 
     dom.uiFilterHeading = document.getElementById("ui-filter-heading");
     dom.resetAllBtn = document.getElementById("reset-all-btn");
@@ -636,10 +631,6 @@
     dom.uiInstStep2.textContent = t("instructionStep2");
     dom.uiInstStep3.textContent = t("instructionStep3");
     dom.uiInstDontShow.textContent = t("instructionDontShowAgain");
-
-    dom.uiTabSelect.textContent = ui("tabSelect");
-    dom.uiTabFilter.textContent = ui("tabFilter");
-    dom.uiTabDetails.textContent = ui("tabDetails");
 
     dom.uiFilterHeading.textContent = ui("filterHeading");
     dom.resetAllBtn.textContent = ui("resetAllBtn");
@@ -1677,25 +1668,6 @@
 
     dom.sheetExpandBtn.addEventListener("click", () => {
       setSheetMode(state.sheetMode === "collapsed" ? "half" : "collapsed");
-    });
-
-    // Mobile Section Tabs
-    document.querySelectorAll(".mobile-tab").forEach((tabBtn) => {
-      tabBtn.addEventListener("click", () => {
-        const targetTab = tabBtn.dataset.tab;
-        state.activeMobileTab = targetTab;
-        document.querySelectorAll(".mobile-tab").forEach((b) => {
-          const active = b.dataset.tab === targetTab;
-          b.classList.toggle("active", active);
-          b.setAttribute("aria-selected", String(active));
-        });
-        document.querySelectorAll(".panel-section").forEach((sec) => {
-          sec.classList.toggle("active-mobile-section", sec.dataset.tabSection === targetTab);
-        });
-        if (state.sheetMode === "collapsed") {
-          setSheetMode("half");
-        }
-      });
     });
 
     // Window Resize -> Re-fit Map & Close Context Menu

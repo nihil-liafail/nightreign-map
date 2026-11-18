@@ -149,11 +149,14 @@
 
         <!-- セクション3: 確定パターンの詳細情報リスト -->
         <section id="section-details" class="panel-section" data-tab-section="tab-details">
-          <div class="section-header">
+          <button type="button" id="details-toggle-btn" class="section-header section-toggle-btn is-collapsed" aria-expanded="false" aria-controls="pattern-details-content">
             <h2 class="section-title" id="ui-details-heading">確定パターン詳細</h2>
-            <span id="pattern-id-badge" class="section-sub">未確定</span>
-          </div>
-          <div id="pattern-details-content" class="pattern-details-content">
+            <span class="section-header-right">
+              <span id="pattern-id-badge" class="section-sub">未確定</span>
+              <span class="section-chevron" aria-hidden="true">▾</span>
+            </span>
+          </button>
+          <div id="pattern-details-content" class="pattern-details-content hidden">
             <p class="empty-hint" id="ui-details-empty">出現地点（鷹アイコン）と大拠点を選択してパターンが1件に確定すると、ボス・封牢・サークル・魔術師塔の詳細がここに一覧表示されます。</p>
           </div>
         </section>

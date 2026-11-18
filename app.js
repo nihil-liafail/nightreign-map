@@ -301,6 +301,7 @@
     dom.primaryWeaknessText = document.getElementById("primary-weakness-text");
     dom.weaknessBadgesRow = document.getElementById("weakness-badges-row");
 
+    dom.detailsToggleBtn = document.getElementById("details-toggle-btn");
     dom.uiDetailsHeading = document.getElementById("ui-details-heading");
     dom.patternIdBadge = document.getElementById("pattern-id-badge");
     dom.patternDetailsContent = document.getElementById("pattern-details-content");
@@ -1607,6 +1608,15 @@
   }
 
   function initUIEvents() {
+    // Collapsible Pattern Details Section
+    if (dom.detailsToggleBtn && dom.patternDetailsContent) {
+      dom.detailsToggleBtn.addEventListener("click", () => {
+        const isCollapsed = dom.patternDetailsContent.classList.toggle("hidden");
+        dom.detailsToggleBtn.classList.toggle("is-collapsed", isCollapsed);
+        dom.detailsToggleBtn.setAttribute("aria-expanded", String(!isCollapsed));
+      });
+    }
+
     // Language Switcher
     document.querySelectorAll(".lang-btn").forEach((btn) => {
       btn.addEventListener("click", () => {

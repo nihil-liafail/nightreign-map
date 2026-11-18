@@ -738,6 +738,41 @@ button {
   gap: 8px;
 }
 
+.section-toggle-btn {
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 2px 0;
+  cursor: pointer;
+  color: inherit;
+  text-align: left;
+}
+
+.section-toggle-btn:hover .section-title {
+  color: var(--text-primary);
+}
+
+.section-header-right {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.section-chevron {
+  display: inline-block;
+  font-size: 12px;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+}
+
+.section-toggle-btn.is-collapsed {
+  margin-bottom: 0;
+}
+
+.section-toggle-btn.is-collapsed .section-chevron {
+  transform: rotate(-90deg);
+}
+
 .empty-hint {
   font-size: 12px;
   color: var(--text-muted);

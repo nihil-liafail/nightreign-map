@@ -389,6 +389,7 @@ button {
 .panel-body {
   flex: 1;
   overflow-y: auto;
+  scrollbar-gutter: stable;
   padding: 10px 14px 16px;
   display: flex;
   flex-direction: column;
@@ -736,16 +737,35 @@ button {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-top: 8px;
+}
+
+.details-accordion {
+  width: 100%;
 }
 
 .section-toggle-btn {
   width: 100%;
-  background: transparent;
-  border: none;
-  padding: 2px 0;
+  min-height: 40px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 8px 10px;
+  margin-bottom: 0;
   cursor: pointer;
   color: inherit;
   text-align: left;
+  list-style: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: rgba(245, 158, 11, 0.25);
+}
+
+.section-toggle-btn::-webkit-details-marker {
+  display: none;
+}
+
+.section-toggle-btn:hover {
+  background-color: var(--bg-card-hover);
 }
 
 .section-toggle-btn:hover .section-title {
@@ -760,17 +780,14 @@ button {
 
 .section-chevron {
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
   color: var(--text-muted);
+  transform: rotate(-90deg);
   transition: transform 0.15s ease;
 }
 
-.section-toggle-btn.is-collapsed {
-  margin-bottom: 0;
-}
-
-.section-toggle-btn.is-collapsed .section-chevron {
-  transform: rotate(-90deg);
+.details-accordion[open] .section-chevron {
+  transform: rotate(0deg);
 }
 
 .empty-hint {

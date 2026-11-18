@@ -1181,10 +1181,11 @@
       coords.greatHollowDay2Circle?.[pat.greatHollowDay2Circle]
     ) {
       const pt = coords.greatHollowDay2Circle[pat.greatHollowDay2Circle];
-      const pin = createPinContainer(pt.x, pt.y, 40, 20, "ring-circle-cyan");
+      const pin = createPinContainer(pt.x, pt.y, 280, 140, "ring-circle-gh-day2");
       const lbl = document.createElement("div");
       lbl.className = "pin-label pin-label-cyan";
-      lbl.style.bottom = "2px";
+      lbl.style.top = "50%";
+      lbl.style.transform = "translate(-50%, -50%)";
       lbl.textContent = "Day2 circle";
       pin.appendChild(lbl);
       dom.layerCirclesAndExtras.appendChild(pin);

@@ -971,6 +971,11 @@ button {
   z-index: 14;
 }
 
+.pin-size-280 {
+  width: 280px;
+  height: 280px;
+}
+
 .pin-size-64 {
   width: 64px;
   height: 64px;
@@ -1017,6 +1022,15 @@ button {
 .ring-circle-cyan {
   box-shadow: 0 0 0 4px #155e75;
   background-color: rgba(6, 182, 212, 0.2);
+}
+
+.ring-circle-gh-day2 {
+  pointer-events: none;
+  cursor: default;
+  z-index: 5;
+  border: 3px dashed rgba(34, 211, 238, 0.7);
+  box-shadow: inset 0 0 24px rgba(6, 182, 212, 0.1);
+  background-color: rgba(6, 182, 212, 0.06);
 }
 
 .ring-circle-amber {

@@ -1,0 +1,919 @@
+{
+  "source_origin": "https://nightreign-seed-finder.com",
+  "total_requested": 130,
+  "downloaded": 130,
+  "failed": 0,
+  "total_bytes": 6839790,
+  "files": [
+    {
+      "remote_path": "/Images/buildingIcons/church_spawn_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/church_spawn_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 25348
+    },
+    {
+      "remote_path": "/Images/buildingIcons/church_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/church_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12022
+    },
+    {
+      "remote_path": "/Images/buildingIcons/empty_spawn_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/empty_spawn_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 17638
+    },
+    {
+      "remote_path": "/Images/buildingIcons/empty_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/empty_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 8276
+    },
+    {
+      "remote_path": "/Images/buildingIcons/unknown_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/unknown_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 51718
+    },
+    {
+      "remote_path": "/Images/buildingIcons/portal_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/portal_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 3338
+    },
+    {
+      "remote_path": "/Images/buildingIcons/township_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/township_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 10034
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ScaleBearingMerchant_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ScaleBearingMerchant_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 5024
+    },
+    {
+      "remote_path": "/Images/buildingIcons/sorcerers_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/sorcerers_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 11276
+    },
+    {
+      "remote_path": "/Images/buildingIcons/diff_sorcerers_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/diff_sorcerers_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 11536
+    },
+    {
+      "remote_path": "/Images/buildingIcons/EUF_holy_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/EUF_holy_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 15514
+    },
+    {
+      "remote_path": "/Images/buildingIcons/EUF_rot_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/EUF_rot_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 15846
+    },
+    {
+      "remote_path": "/Images/buildingIcons/WUF_fire_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/WUF_fire_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 17218
+    },
+    {
+      "remote_path": "/Images/buildingIcons/WUF_magic_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/WUF_magic_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 17134
+    },
+    {
+      "remote_path": "/Images/buildingIcons/Crystal_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/Crystal_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 11860
+    },
+    {
+      "remote_path": "/Images/buildingIcons/CrystalUnder_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/CrystalUnder_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13386
+    },
+    {
+      "remote_path": "/Images/buildingIcons/brokenCrystal_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/brokenCrystal_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 7216
+    },
+    {
+      "remote_path": "/Images/buildingIcons/brokenCrystalUnder_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/brokenCrystalUnder_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 8726
+    },
+    {
+      "remote_path": "/Images/buildingIcons/possibleCrystal_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/possibleCrystal_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 11538
+    },
+    {
+      "remote_path": "/Images/buildingIcons/possibleCrystalUnder_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/possibleCrystalUnder_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13094
+    },
+    {
+      "remote_path": "/Images/buildingIcons/forge_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/forge_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13952
+    },
+    {
+      "remote_path": "/Images/buildingIcons/forge_bleed_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/forge_bleed_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13394
+    },
+    {
+      "remote_path": "/Images/buildingIcons/forge_eletric_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/forge_eletric_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13712
+    },
+    {
+      "remote_path": "/Images/buildingIcons/forge_fire_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/forge_fire_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13754
+    },
+    {
+      "remote_path": "/Images/buildingIcons/forge_holy_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/forge_holy_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 14000
+    },
+    {
+      "remote_path": "/Images/buildingIcons/forge_poison_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/forge_poison_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 14010
+    },
+    {
+      "remote_path": "/Images/buildingIcons/fort_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/fort_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 22216
+    },
+    {
+      "remote_path": "/Images/buildingIcons/fort_magic_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/fort_magic_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 21878
+    },
+    {
+      "remote_path": "/Images/buildingIcons/greatchurch_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/greatchurch_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18022
+    },
+    {
+      "remote_path": "/Images/buildingIcons/greatchurch_eletric_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/greatchurch_eletric_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 16872
+    },
+    {
+      "remote_path": "/Images/buildingIcons/greatchurch_fire_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/greatchurch_fire_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 16896
+    },
+    {
+      "remote_path": "/Images/buildingIcons/greatchurch_frostbite_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/greatchurch_frostbite_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 17508
+    },
+    {
+      "remote_path": "/Images/buildingIcons/greatchurch_holy_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/greatchurch_holy_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 17156
+    },
+    {
+      "remote_path": "/Images/buildingIcons/greatchurch_sleep_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/greatchurch_sleep_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 17138
+    },
+    {
+      "remote_path": "/Images/buildingIcons/mainencampment_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/mainencampment_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 10758
+    },
+    {
+      "remote_path": "/Images/buildingIcons/mainencampment_eletric_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/mainencampment_eletric_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 10854
+    },
+    {
+      "remote_path": "/Images/buildingIcons/mainencampment_fire_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/mainencampment_fire_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 10966
+    },
+    {
+      "remote_path": "/Images/buildingIcons/mainencampment_madness_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/mainencampment_madness_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 11798
+    },
+    {
+      "remote_path": "/Images/buildingIcons/marsh_bleed_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/marsh_bleed_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 17684
+    },
+    {
+      "remote_path": "/Images/buildingIcons/marsh_frostbite_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/marsh_frostbite_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18588
+    },
+    {
+      "remote_path": "/Images/buildingIcons/marsh_madness_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/marsh_madness_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18678
+    },
+    {
+      "remote_path": "/Images/buildingIcons/marsh_poison_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/marsh_poison_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18190
+    },
+    {
+      "remote_path": "/Images/buildingIcons/marsh_rot_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/marsh_rot_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18344
+    },
+    {
+      "remote_path": "/Images/buildingIcons/marsh_sleep_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/marsh_sleep_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18076
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ruins_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ruins_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12972
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ruins_bleed_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ruins_bleed_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12670
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ruins_blight_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ruins_blight_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13192
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ruins_eletric_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ruins_eletric_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12712
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ruins_fire_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ruins_fire_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12664
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ruins_frostbite_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ruins_frostbite_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13428
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ruins_holy_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ruins_holy_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12932
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ruins_magic_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ruins_magic_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12600
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ruins_poison_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ruins_poison_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13056
+    },
+    {
+      "remote_path": "/Images/buildingIcons/ruins_sleep_v2.webp",
+      "local_path": "assets/seed_finder_icons/buildingIcons/ruins_sleep_v2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13026
+    },
+    {
+      "remote_path": "/Images/resultOverlay/boss_field.webp",
+      "local_path": "assets/seed_finder_icons/resultOverlay/boss_field.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 3316
+    },
+    {
+      "remote_path": "/Images/resultOverlay/boss_great.webp",
+      "local_path": "assets/seed_finder_icons/resultOverlay/boss_great.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 6348
+    },
+    {
+      "remote_path": "/Images/resultOverlay/caravans.webp",
+      "local_path": "assets/seed_finder_icons/resultOverlay/caravans.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 9502
+    },
+    {
+      "remote_path": "/Images/resultOverlay/chest.png",
+      "local_path": "assets/seed_finder_icons/resultOverlay/chest.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 4727
+    },
+    {
+      "remote_path": "/Images/resultOverlay/gh_merchant.webp",
+      "local_path": "assets/seed_finder_icons/resultOverlay/gh_merchant.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 1156
+    },
+    {
+      "remote_path": "/Images/resultOverlay/nightboss_loc.webp",
+      "local_path": "assets/seed_finder_icons/resultOverlay/nightboss_loc.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 8792
+    },
+    {
+      "remote_path": "/Images/resultOverlay/rot_blessing.webp",
+      "local_path": "assets/seed_finder_icons/resultOverlay/rot_blessing.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 5834
+    },
+    {
+      "remote_path": "/Images/events/augurraidDay1.webp",
+      "local_path": "assets/seed_finder_icons/events/augurraidDay1.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 17102
+    },
+    {
+      "remote_path": "/Images/events/augurraidDay2.webp",
+      "local_path": "assets/seed_finder_icons/events/augurraidDay2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 17484
+    },
+    {
+      "remote_path": "/Images/events/balancersRaidDay1.webp",
+      "local_path": "assets/seed_finder_icons/events/balancersRaidDay1.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 14308
+    },
+    {
+      "remote_path": "/Images/events/caligoRaidDay1.webp",
+      "local_path": "assets/seed_finder_icons/events/caligoRaidDay1.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 15986
+    },
+    {
+      "remote_path": "/Images/events/caligoRaidDay2.webp",
+      "local_path": "assets/seed_finder_icons/events/caligoRaidDay2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 16256
+    },
+    {
+      "remote_path": "/Images/events/extrabossDay1.webp",
+      "local_path": "assets/seed_finder_icons/events/extrabossDay1.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12412
+    },
+    {
+      "remote_path": "/Images/events/extrabossDay2.webp",
+      "local_path": "assets/seed_finder_icons/events/extrabossDay2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12598
+    },
+    {
+      "remote_path": "/Images/events/fellomenday1.webp",
+      "local_path": "assets/seed_finder_icons/events/fellomenday1.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13126
+    },
+    {
+      "remote_path": "/Images/events/fellomenDay2.webp",
+      "local_path": "assets/seed_finder_icons/events/fellomenDay2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13282
+    },
+    {
+      "remote_path": "/Images/events/frenzytower.webp",
+      "local_path": "assets/seed_finder_icons/events/frenzytower.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12958
+    },
+    {
+      "remote_path": "/Images/events/gladiusRaidDay1.webp",
+      "local_path": "assets/seed_finder_icons/events/gladiusRaidDay1.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 14076
+    },
+    {
+      "remote_path": "/Images/events/gladiusRaidDay2.webp",
+      "local_path": "assets/seed_finder_icons/events/gladiusRaidDay2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 14288
+    },
+    {
+      "remote_path": "/Images/events/gnosterplagueDay1.webp",
+      "local_path": "assets/seed_finder_icons/events/gnosterplagueDay1.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18516
+    },
+    {
+      "remote_path": "/Images/events/gnosterplagueDay2.webp",
+      "local_path": "assets/seed_finder_icons/events/gnosterplagueDay2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18698
+    },
+    {
+      "remote_path": "/Images/events/libracurseDay1.webp",
+      "local_path": "assets/seed_finder_icons/events/libracurseDay1.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13330
+    },
+    {
+      "remote_path": "/Images/events/libracurseDay2.webp",
+      "local_path": "assets/seed_finder_icons/events/libracurseDay2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13602
+    },
+    {
+      "remote_path": "/Images/events/mausoleum.webp",
+      "local_path": "assets/seed_finder_icons/events/mausoleum.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 11202
+    },
+    {
+      "remote_path": "/Images/events/meteorstrikeDay1.webp",
+      "local_path": "assets/seed_finder_icons/events/meteorstrikeDay1.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18072
+    },
+    {
+      "remote_path": "/Images/events/meteorstrikeDay2.webp",
+      "local_path": "assets/seed_finder_icons/events/meteorstrikeDay2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18288
+    },
+    {
+      "remote_path": "/Images/events/nighthordeDay1.webp",
+      "local_path": "assets/seed_finder_icons/events/nighthordeDay1.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12988
+    },
+    {
+      "remote_path": "/Images/events/nighthordeDay2.webp",
+      "local_path": "assets/seed_finder_icons/events/nighthordeDay2.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 13194
+    },
+    {
+      "remote_path": "/Images/events/old_gaol.webp",
+      "local_path": "assets/seed_finder_icons/events/old_gaol.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 8472
+    },
+    {
+      "remote_path": "/Images/events/sorcerersrise.webp",
+      "local_path": "assets/seed_finder_icons/events/sorcerersrise.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12616
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/unknown_nightlord.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/unknown_nightlord.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12776
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/secret_nightlord.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/secret_nightlord.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 7698
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/1_Gladius-tricephalos-elden-ring-nightreign-icon.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/1_Gladius-tricephalos-elden-ring-nightreign-icon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 18132
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/2_Adel-gaping-jaw-elden-ring-nightreign-icon.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/2_Adel-gaping-jaw-elden-ring-nightreign-icon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 21348
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/3_Gnoster-sentient-pest-elden-ring-nightreign-icon.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/3_Gnoster-sentient-pest-elden-ring-nightreign-icon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 21554
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/4_Maris-augur-elden-ring-nightreign-icon.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/4_Maris-augur-elden-ring-nightreign-icon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 20368
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/5_Libra-equilibrious-beast-elden-ring-nightreign-icon.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/5_Libra-equilibrious-beast-elden-ring-nightreign-icon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 22494
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/6_Fulghor-darkdrift-knight-elden-ring-nightreign-icon.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/6_Fulghor-darkdrift-knight-elden-ring-nightreign-icon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 21020
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/7_Caligo-fissure-in-the-fog-elden-ring-nightreign-icon.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/7_Caligo-fissure-in-the-fog-elden-ring-nightreign-icon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 21618
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/8_Heolstor-night-aspect-elden-ring-nightreign-icon.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/8_Heolstor-night-aspect-elden-ring-nightreign-icon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 21182
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/9_Balancers-expedition-elden-ring-nightreign-icon.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/9_Balancers-expedition-elden-ring-nightreign-icon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 21234
+    },
+    {
+      "remote_path": "/Images/nightlordIcons/10_Greg-expedition-elden-ring-nightreign-icon.webp",
+      "local_path": "assets/seed_finder_icons/nightlordIcons/10_Greg-expedition-elden-ring-nightreign-icon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 16632
+    },
+    {
+      "remote_path": "/Images/nightlordStatus/1_Gladius_Status.webp",
+      "local_path": "assets/seed_finder_icons/nightlordStatus/1_Gladius_Status.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 26520
+    },
+    {
+      "remote_path": "/Images/nightlordStatus/2_Adel_Status.webp",
+      "local_path": "assets/seed_finder_icons/nightlordStatus/2_Adel_Status.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 26712
+    },
+    {
+      "remote_path": "/Images/nightlordStatus/3_Gnoster_Status.webp",
+      "local_path": "assets/seed_finder_icons/nightlordStatus/3_Gnoster_Status.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 24078
+    },
+    {
+      "remote_path": "/Images/nightlordStatus/4_Maris_Status.webp",
+      "local_path": "assets/seed_finder_icons/nightlordStatus/4_Maris_Status.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 29512
+    },
+    {
+      "remote_path": "/Images/nightlordStatus/5_Libra_Status.webp",
+      "local_path": "assets/seed_finder_icons/nightlordStatus/5_Libra_Status.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 27412
+    },
+    {
+      "remote_path": "/Images/nightlordStatus/6_Fulghor_Status.webp",
+      "local_path": "assets/seed_finder_icons/nightlordStatus/6_Fulghor_Status.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 25814
+    },
+    {
+      "remote_path": "/Images/nightlordStatus/7_Caligo_Status.webp",
+      "local_path": "assets/seed_finder_icons/nightlordStatus/7_Caligo_Status.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 26772
+    },
+    {
+      "remote_path": "/Images/nightlordStatus/8_Heolstor_Status.webp",
+      "local_path": "assets/seed_finder_icons/nightlordStatus/8_Heolstor_Status.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 25230
+    },
+    {
+      "remote_path": "/Images/nightlordStatus/9_Balancers_Status.webp",
+      "local_path": "assets/seed_finder_icons/nightlordStatus/9_Balancers_Status.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 27360
+    },
+    {
+      "remote_path": "/Images/nightlordStatus/10_Greg_Status.webp",
+      "local_path": "assets/seed_finder_icons/nightlordStatus/10_Greg_Status.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 24016
+    },
+    {
+      "remote_path": "/Images/SpawnIcons/spawn.webp",
+      "local_path": "assets/seed_finder_icons/SpawnIcons/spawn.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 2416
+    },
+    {
+      "remote_path": "/Images/filters/castle.png",
+      "local_path": "assets/seed_finder_icons/filters/castle.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 4201
+    },
+    {
+      "remote_path": "/Images/filters/evergaol.png",
+      "local_path": "assets/seed_finder_icons/filters/evergaol.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 4466
+    },
+    {
+      "remote_path": "/Images/filters/sorcerers_rise.png",
+      "local_path": "assets/seed_finder_icons/filters/sorcerers_rise.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 2517
+    },
+    {
+      "remote_path": "/Images/filters/temple.png",
+      "local_path": "assets/seed_finder_icons/filters/temple.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 4333
+    },
+    {
+      "remote_path": "/Images/filters/trackable_event.png",
+      "local_path": "assets/seed_finder_icons/filters/trackable_event.png",
+      "status": 200,
+      "content_type": "image/png",
+      "bytes": 4414
+    },
+    {
+      "remote_path": "/Images/mapTypes/normalIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/normalIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 52418
+    },
+    {
+      "remote_path": "/Images/mapTypes/craterIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/craterIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12352
+    },
+    {
+      "remote_path": "/Images/mapTypes/mountainIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/mountainIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 12940
+    },
+    {
+      "remote_path": "/Images/mapTypes/rotIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/rotIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 38476
+    },
+    {
+      "remote_path": "/Images/mapTypes/noklateoIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/noklateoIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 22238
+    },
+    {
+      "remote_path": "/Images/mapTypes/greatHollowIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/greatHollowIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 16516
+    },
+    {
+      "remote_path": "/Images/mapTypes/map_icon/normalIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/map_icon/normalIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 11228
+    },
+    {
+      "remote_path": "/Images/mapTypes/map_icon/craterIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/map_icon/craterIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 10830
+    },
+    {
+      "remote_path": "/Images/mapTypes/map_icon/mountainIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/map_icon/mountainIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 11550
+    },
+    {
+      "remote_path": "/Images/mapTypes/map_icon/rotIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/map_icon/rotIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 11486
+    },
+    {
+      "remote_path": "/Images/mapTypes/map_icon/noklateoIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/map_icon/noklateoIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 11608
+    },
+    {
+      "remote_path": "/Images/mapTypes/map_icon/greatHollowIcon.webp",
+      "local_path": "assets/seed_finder_icons/mapTypes/map_icon/greatHollowIcon.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 14474
+    },
+    {
+      "remote_path": "/Images/maps/elden-ring-nightreign-normal-map.webp",
+      "local_path": "assets/seed_finder_icons/maps/elden-ring-nightreign-normal-map.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 823856
+    },
+    {
+      "remote_path": "/Images/maps/elden-ring-nightreign-crater-map.webp",
+      "local_path": "assets/seed_finder_icons/maps/elden-ring-nightreign-crater-map.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 823776
+    },
+    {
+      "remote_path": "/Images/maps/elden-ring-nightreign-mountaintop-map.webp",
+      "local_path": "assets/seed_finder_icons/maps/elden-ring-nightreign-mountaintop-map.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 841534
+    },
+    {
+      "remote_path": "/Images/maps/elden-ring-nightreign-rotted-woods-map.webp",
+      "local_path": "assets/seed_finder_icons/maps/elden-ring-nightreign-rotted-woods-map.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 862678
+    },
+    {
+      "remote_path": "/Images/maps/elden-ring-nightreign-noklateo-shrouded-city-map.webp",
+      "local_path": "assets/seed_finder_icons/maps/elden-ring-nightreign-noklateo-shrouded-city-map.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 838382
+    },
+    {
+      "remote_path": "/Images/maps/elden-ring-nightreign-great-hollow-map.webp",
+      "local_path": "assets/seed_finder_icons/maps/elden-ring-nightreign-great-hollow-map.webp",
+      "status": 200,
+      "content_type": "image/webp",
+      "bytes": 737652
+    }
+  ]
+}

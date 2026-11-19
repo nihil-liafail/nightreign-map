@@ -45,7 +45,6 @@
             <div class="lang-switcher" role="group" aria-label="Language switcher">
               <button type="button" class="lang-btn active" data-lang="ja">JA</button>
               <button type="button" class="lang-btn" data-lang="en">EN</button>
-              <button type="button" class="lang-btn" data-lang="zh">ZH</button>
             </div>
             <button id="help-toggle-btn" type="button" class="icon-btn" title="使い方" aria-label="使い方">?</button>
           </div>
@@ -58,7 +57,7 @@
             <button id="close-instructions-btn" type="button" class="text-close-btn" aria-label="Close instructions">×</button>
           </div>
           <ol class="instructions-list">
-            <li id="ui-inst-step1">マップ（地変）や夜の王を選択できます。</li>
+            <li id="ui-inst-step1">夜の王（初期値：不明）とマップ（地変：初期値 通常）を選択します。</li>
             <li id="ui-inst-step2">マップ上の出現地点アイコン（鷹のアイコン）をクリックして開始します。</li>
             <li id="ui-inst-step3">拠点のアイコンを選択してパターンを絞り込みます。</li>
           </ol>
@@ -106,22 +105,13 @@
           </div>
         </section>
 
-        <!-- セクション2: マップ（地変）と夜の王の選択 -->
+        <!-- セクション2: 夜の王とマップ（地変）の選択 -->
         <section id="section-select" class="panel-section">
-          <!-- マップ（地変）切り替え -->
-          <div class="selector-block">
-            <div class="section-header">
-              <h2 class="section-title" id="ui-map-heading">マップ（地変）選択</h2>
-              <span id="current-map-label" class="section-sub">Default</span>
-            </div>
-            <div id="map-selector-grid" class="selector-grid map-grid" role="radiogroup" aria-label="マップ選択"></div>
-          </div>
-
-          <!-- 夜の王切り替え -->
+          <!-- 1. 夜の王切り替え（不明含む） -->
           <div class="selector-block">
             <div class="section-header">
               <h2 class="section-title" id="ui-lord-heading">夜の王を選択</h2>
-              <button id="clear-lord-btn" type="button" class="btn btn-ghost btn-xs">未選択(???)</button>
+              <button id="clear-lord-btn" type="button" class="btn btn-ghost btn-xs">不明(???)</button>
             </div>
             <div id="lord-selector-grid" class="selector-grid lord-grid" role="radiogroup" aria-label="夜の王選択"></div>
 
@@ -137,6 +127,15 @@
               </div>
               <div id="weakness-badges-row" class="weakness-badges-row"></div>
             </div>
+          </div>
+
+          <!-- 2. マップ（地変）切り替え -->
+          <div class="selector-block">
+            <div class="section-header">
+              <h2 class="section-title" id="ui-map-heading">マップ（地変）選択</h2>
+              <span id="current-map-label" class="section-sub">Default</span>
+            </div>
+            <div id="map-selector-grid" class="selector-grid map-grid" role="radiogroup" aria-label="マップ選択"></div>
           </div>
         </section>
 
@@ -185,7 +184,7 @@
       <!-- ズーム・パン対応マップビューポート -->
       <div id="map-viewport" class="map-viewport" tabindex="0" aria-label="マップキャンバス">
         <div id="map-canvas" class="map-canvas">
-          <img id="map-bg-image" class="map-bg-image" src="./assets/map/Default.webp" alt="map" width="1000" height="1000" draggable="false" />
+          <img id="map-bg-image" class="map-bg-image" src="./assets/seed_finder_icons/maps/elden-ring-nightreign-normal-map.webp" alt="map" width="1000" height="1000" draggable="false" />
           <!-- 各種ピンレイヤー（1000x1000論理座標系） -->
           <div id="layer-major-bases" class="map-layer"></div>
           <div id="layer-minor-bases" class="map-layer"></div>

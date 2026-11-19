@@ -1,10 +1,10 @@
-(() => {
+﻿(() => {
   "use strict";
 
   const ASSET_ORIGIN = "./assets";
   const HIDE_INSTRUCTIONS_KEY = "nightreign-hide-instructions";
 
-  // Map localized display labels
+  // Map localized display labels (JA / EN)
   const MAP_LABELS = {
     ja: {
       Default: "通常 (Default)",
@@ -22,14 +22,6 @@
       "隠れ都ノクラテオ": "Noklateo",
       "大空洞": "Great Hollow",
     },
-    zh: {
-      Default: "普通 (Default)",
-      "火口": "火山口",
-      "山嶺": "山岭",
-      "腐れ森": "腐败森林",
-      "隠れ都ノクラテオ": "隐城诺克拉缇奥",
-      "大空洞": "大空洞",
-    },
   };
 
   const UI_STRINGS = {
@@ -43,7 +35,7 @@
       candidateLabel: "残り候補パターン",
       mapHeading: "マップ（地変）選択",
       lordHeading: "夜の王を選択",
-      clearLordBtn: "未選択(???)",
+      clearLordBtn: "不明(???)",
       primaryWeakness: "主弱点:",
       detailsHeading: "確定パターン詳細",
       unresolved: "未確定",
@@ -121,50 +113,6 @@
       groupChests: "Stonesword Key Chests",
       yesText: "Yes",
     },
-    zh: {
-      tabSelect: "地图与夜王",
-      tabFilter: "筛选状态",
-      tabDetails: "确定模式详情",
-      filterHeading: "筛选与判定状态",
-      resetBtn: "重置",
-      resetAllBtn: "重置条件",
-      candidateLabel: "剩余候选模式",
-      mapHeading: "选择地图（地变）",
-      lordHeading: "选择夜王",
-      clearLordBtn: "未选择(???)",
-      primaryWeakness: "主要弱点:",
-      detailsHeading: "确定模式详情",
-      unresolved: "未确定",
-      resolved: "已确定",
-      detailsEmpty: "点击生成点（鹰图标）并选择据点图标将候选缩小至1个后，此处将显示所有Boss、封牢、缩圈与魔法师塔详情。",
-      hintSelectSpawn: "点击生成点图标（鹰形图标）开始",
-      hintSelectMajor: "点击未确定大据点（?）选择图标缩小范围",
-      hintSelectMulti: "请从存在多个候选按钮 [1] [2]... 中选择",
-      hintResolved: "模式已确定！正在显示全部Boss、封牢与缩圈",
-      contextMenuTitle: "选择据点类型与属性",
-      sheetOpen: "展开面板",
-      sheetClose: "最小化",
-      spawnFilterPrefix: "出生点",
-      noActiveFilters: "当前未选择筛选条件",
-      groupCircles: "最终圈（Day 1 / Day 2）",
-      groupCastleAndSpecial: "城堡Boss・特别活动・恩惠",
-      groupFieldBosses: "野外Boss列表",
-      groupEvergaols: "封牢（Evergaols）",
-      groupMajorBases: "大据点（Major Bases）",
-      groupMinorBases: "魔法师塔・教堂・村庄",
-      castleBossLabel: "中央城Boss",
-      rotBlessingLabel: "腐败森林恩惠",
-      towerNorthLabel: "大空洞 北塔",
-      towerSouthLabel: "大空洞 南塔",
-      day2CircleLabel: "大空洞 Day2 圈",
-      frenzyTowerLabel: "癫火塔位置",
-      scaleMerchantLabel: "天秤商人",
-      ghTownMerchantLabel: "大空洞 城镇商人",
-      ghLegMerchantLabel: "大空洞 第2天传说商人",
-      oldGaolLabel: "古封牢 (3万卢恩级)",
-      groupChests: "石剑钥匙宝箱",
-      yesText: "有",
-    },
   };
 
   // High-visibility inline SVG fallback generator
@@ -175,34 +123,163 @@
     return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
   }
 
+  // Unified seed_finder_icons asset tables (SPEC.md 1.3, 1.4, 3.1.1)
+  const SEED_FINDER_MAP_BG = {
+    Default: "maps/elden-ring-nightreign-normal-map.webp",
+    "火口": "maps/elden-ring-nightreign-crater-map.webp",
+    "山嶺": "maps/elden-ring-nightreign-mountaintop-map.webp",
+    "腐れ森": "maps/elden-ring-nightreign-rotted-woods-map.webp",
+    "隠れ都ノクラテオ": "maps/elden-ring-nightreign-noklateo-shrouded-city-map.webp",
+    "大空洞": "maps/elden-ring-nightreign-great-hollow-map.webp",
+  };
+
+  const SEED_FINDER_NIGHTLORD_ICON = {
+    "三つ首の獣": "nightlordIcons/1_Gladius-tricephalos-elden-ring-nightreign-icon.webp",
+    "喰らいつく顎": "nightlordIcons/2_Adel-gaping-jaw-elden-ring-nightreign-icon.webp",
+    "知性の蟲": "nightlordIcons/3_Gnoster-sentient-pest-elden-ring-nightreign-icon.webp",
+    "兆し": "nightlordIcons/4_Maris-augur-elden-ring-nightreign-icon.webp",
+    "調律の魔物": "nightlordIcons/5_Libra-equilibrious-beast-elden-ring-nightreign-icon.webp",
+    "闇駆ける狩人": "nightlordIcons/6_Fulghor-darkdrift-knight-elden-ring-nightreign-icon.webp",
+    "霧の裂け目": "nightlordIcons/7_Caligo-fissure-in-the-fog-elden-ring-nightreign-icon.webp",
+    "夜を象る者": "nightlordIcons/8_Heolstor-night-aspect-elden-ring-nightreign-icon.webp",
+    "安寧者たち": "nightlordIcons/9_Balancers-expedition-elden-ring-nightreign-icon.webp",
+    "瓦礫の王": "nightlordIcons/10_Greg-expedition-elden-ring-nightreign-icon.webp",
+    unnamed: "nightlordIcons/unknown_nightlord.webp",
+    unknown: "nightlordIcons/unknown_nightlord.webp",
+  };
+
+  const SEED_FINDER_PIN_ICON = {
+    spawn: "buildingIcons/empty_spawn_v2.webp",
+    Ruins: "buildingIcons/ruins_v2.webp",
+    "Great Church": "buildingIcons/greatchurch_v2.webp",
+    Fort: "buildingIcons/fort_v2.webp",
+    Camp: "buildingIcons/mainencampment_v2.webp",
+    "Blacksmith Village": "buildingIcons/forge_v2.webp",
+    "Lakes and Marshes": "buildingIcons/marsh_poison_v2.webp",
+    "Map Event": "filters/trackable_event.png",
+    Church: "buildingIcons/church_v2.webp",
+    "Sorcerer's Rise": "buildingIcons/sorcerers_v2.webp",
+    "Difficult Sorcerer's Rise": "buildingIcons/diff_sorcerers_v2.webp",
+    Township: "buildingIcons/township_v2.webp",
+    redBoss: "resultOverlay/boss_great.webp",
+    "field-boss": "resultOverlay/boss_field.webp",
+    evergaol: "filters/evergaol.png",
+    RotBlessing: "resultOverlay/rot_blessing.webp",
+  };
+
+  const SEED_FINDER_EVENT_ICON = {
+    "Day 1 カリゴ襲撃": "events/caligoRaidDay1.webp",
+    "Day 2 カリゴ襲撃": "events/caligoRaidDay2.webp",
+    "Day 1 グラディウス襲撃": "events/gladiusRaidDay1.webp",
+    "Day 2 グラディウス襲撃": "events/gladiusRaidDay2.webp",
+    "Day 1 ハルモニア襲撃": "events/balancersRaidDay1.webp",
+    "Day 1 忌み鬼": "events/fellomenday1.webp",
+    "Day 2 忌み鬼": "events/fellomenDay2.webp",
+    "Day 1 新たな夜の脅威": "events/extrabossDay1.webp",
+    "Day 2 新たな夜の脅威": "events/extrabossDay2.webp",
+    "Day 1 知性の霊": "events/gnosterplagueDay1.webp",
+    "Day 2 知性の霊": "events/gnosterplagueDay2.webp",
+    "Day 1 兆し": "events/augurraidDay1.webp",
+    "Day 2 兆し": "events/augurraidDay2.webp",
+    "Day 1 調律の魔物": "events/libracurseDay1.webp",
+    "Day 2 調律の魔物": "events/libracurseDay2.webp",
+    "Day 1 夜の勢力": "events/nighthordeDay1.webp",
+    "Day 2 夜の勢力": "events/nighthordeDay2.webp",
+    "Day 1 隕石": "events/meteorstrikeDay1.webp",
+    "Day 2 隕石": "events/meteorstrikeDay2.webp",
+    "狂い火": "events/frenzytower.webp",
+    "古の魔術師塔": "events/sorcerersrise.webp",
+    "歩く霊廟": "events/mausoleum.webp",
+  };
+
+  const MAJOR_TYPE_TO_SF_PREFIX = {
+    Ruins: "ruins",
+    "Great Church": "greatchurch",
+    Fort: "fort",
+    Camp: "mainencampment",
+    "Blacksmith Village": "forge",
+    "Lakes and Marshes": "marsh",
+  };
+
+  const ELEMENT_TO_SF_SUFFIX = {
+    lightning: "eletric",
+    death: "blight",
+  };
+
   function getAssetUrl(category, filename) {
     if (!filename) return createSvgDataUri("?");
-    // Never request the 2 known 404 paths on the upstream server
     if (category === "mapIcon" && filename === "unnamed") {
       return createSvgDataUri("?", "#1e293b", "#94a3b8");
     }
     if (category === "icon" && filename === "Small Camp") {
       return createSvgDataUri("SC", "#1e293b", "#94a3b8");
     }
+
+    // Resolve seed_finder_icons relative path first
+    let sfRelPath = null;
+    if (category === "seedFinder") {
+      sfRelPath = filename;
+    } else if (category === "map") {
+      sfRelPath = SEED_FINDER_MAP_BG[filename];
+    } else if (category === "nightLord") {
+      sfRelPath = SEED_FINDER_NIGHTLORD_ICON[filename];
+    } else if (category === "icon") {
+      sfRelPath = SEED_FINDER_PIN_ICON[filename];
+    } else if (category === "event") {
+      sfRelPath = SEED_FINDER_EVENT_ICON[filename] || "filters/trackable_event.png";
+    }
+
+    if (sfRelPath) {
+      const inlineSf = window.__NIGHTREIGN_ASSETS__?.seedFinder?.[sfRelPath];
+      if (inlineSf) return inlineSf;
+      return `${ASSET_ORIGIN}/seed_finder_icons/${sfRelPath}`;
+    }
+
     const inlineAsset = window.__NIGHTREIGN_ASSETS__?.[category]?.[filename];
     if (inlineAsset) {
       return inlineAsset;
     }
     const enc = encodeURIComponent(filename);
-    switch (category) {
-      case "map":
-        return `${ASSET_ORIGIN}/map/${enc}.webp`;
-      case "mapIcon":
-        return `${ASSET_ORIGIN}/map/icon/${enc}.webp`;
-      case "nightLord":
-        return `${ASSET_ORIGIN}/nightLord/${enc}.jpg`;
-      case "element":
-        return `${ASSET_ORIGIN}/icon/element/${enc}.png`;
-      case "icon":
-        return `${ASSET_ORIGIN}/icon/${enc}.png`;
-      default:
-        return createSvgDataUri("?");
+    if (category === "element") {
+      return `${ASSET_ORIGIN}/icon/element/${enc}.png`;
     }
+    if (category === "mapIcon") {
+      return `${ASSET_ORIGIN}/map/icon/${enc}.webp`;
+    }
+    if (category === "icon") {
+      return `${ASSET_ORIGIN}/icon/${enc}.png`;
+    }
+    return createSvgDataUri("?");
+  }
+
+  function getMajorBaseIconUrl(type, element, baseKey, specialEvent = null) {
+    if (!type) return getAssetUrl("icon", "undefined");
+    if (type === "Map Event") {
+      if (specialEvent && SEED_FINDER_EVENT_ICON[specialEvent]) {
+        return getAssetUrl("seedFinder", SEED_FINDER_EVENT_ICON[specialEvent]);
+      }
+      return getAssetUrl("seedFinder", "filters/trackable_event.png");
+    }
+    if (state.currentMap === "大空洞") {
+      if (baseKey === "Point1" && (element === "fire" || element === "magic")) {
+        return getAssetUrl("seedFinder", `buildingIcons/WUF_${element}_v2.webp`);
+      }
+      if (baseKey === "Point4" && (element === "holy" || element === "rot")) {
+        return getAssetUrl("seedFinder", `buildingIcons/EUF_${element}_v2.webp`);
+      }
+    }
+    if (type === "Ruins" && element === "rot") {
+      return getAssetUrl("seedFinder", "buildingIcons/EUF_rot_v2.webp");
+    }
+    const prefix = MAJOR_TYPE_TO_SF_PREFIX[type];
+    if (prefix) {
+      const elemCode = element ? ELEMENT_TO_SF_SUFFIX[element] || element : null;
+      const rel = elemCode
+        ? `buildingIcons/${prefix}_${elemCode}_v2.webp`
+        : `buildingIcons/${prefix}_v2.webp`;
+      return getAssetUrl("seedFinder", rel);
+    }
+    return getAssetUrl("icon", type);
   }
 
   function attachImageFallback(imgEl, fallbackLabel, bgColor, borderColor) {
@@ -342,8 +419,10 @@
       rot: "腐敗",
       bleed: "出血",
       frost: "冷気",
+      frostbite: "冷気",
       sleep: "睡眠",
       madness: "発狂",
+      death: "死",
     },
     en: {
       holy: "Holy",
@@ -354,20 +433,10 @@
       rot: "Scarlet Rot",
       bleed: "Blood Loss",
       frost: "Frostbite",
+      frostbite: "Frostbite",
       sleep: "Sleep",
       madness: "Madness",
-    },
-    zh: {
-      holy: "圣",
-      fire: "火",
-      magic: "魔力",
-      lightning: "雷",
-      poison: "毒",
-      rot: "猩红腐败",
-      bleed: "出血",
-      frost: "冻伤",
-      sleep: "睡眠",
-      madness: "发狂",
+      death: "Death Blight",
     },
   };
 
@@ -569,19 +638,10 @@
 
       const typeImg = document.createElement("img");
       typeImg.className = "candidate-type-img";
-      typeImg.src = getAssetUrl("icon", cand.type);
-      typeImg.alt = cand.type;
+      typeImg.src = getMajorBaseIconUrl(cand.type, cand.element, baseName);
+      typeImg.alt = `${cand.type}${cand.element ? ` (${cand.element})` : ""}`;
       attachImageFallback(typeImg, cand.type.slice(0, 2), "#1e293b", "#f59e0b");
       btn.appendChild(typeImg);
-
-      if (cand.element) {
-        const elemImg = document.createElement("img");
-        elemImg.className = "candidate-elem-img";
-        elemImg.src = getAssetUrl("element", cand.element);
-        elemImg.alt = cand.element;
-        attachImageFallback(elemImg, cand.element.slice(0, 2), "#065f46", "#10b981");
-        btn.appendChild(elemImg);
-      }
 
       btn.addEventListener("click", (ev) => {
         ev.stopPropagation();
@@ -654,36 +714,7 @@
   }
 
   function renderSelectors(derived) {
-    // 1. Map Selector Grid (6 maps)
-    const mapImages = state.coordinatesMaster?.mapImages || [];
-    dom.mapSelectorGrid.innerHTML = "";
-    dom.currentMapLabel.textContent = getMapDisplayName(state.currentMap);
-
-    mapImages.forEach(({ filename }) => {
-      const btn = document.createElement("button");
-      btn.type = "button";
-      btn.className = `selector-item ${state.currentMap === filename ? "active" : ""}`;
-      btn.dataset.map = filename;
-      btn.setAttribute("role", "radio");
-      btn.setAttribute("aria-checked", String(state.currentMap === filename));
-
-      const img = document.createElement("img");
-      img.className = "selector-thumb";
-      img.src = getAssetUrl("mapIcon", filename);
-      img.alt = filename;
-      attachImageFallback(img, filename.slice(0, 2), "#1e293b", "#f59e0b");
-
-      const span = document.createElement("span");
-      span.className = "selector-name";
-      span.textContent = getMapDisplayName(filename);
-
-      btn.appendChild(img);
-      btn.appendChild(span);
-      btn.addEventListener("click", () => handleMapChange(filename));
-      dom.mapSelectorGrid.appendChild(btn);
-    });
-
-    // 2. Night Lord Selector Grid (10 Night Lords)
+    // 1. Night Lord Selector Grid ("Unselected" default + 10 Night Lords)
     const allNightLords = Object.keys(state.nightLordsMaster || {});
     dom.lordSelectorGrid.innerHTML = "";
 
@@ -691,6 +722,25 @@
       !state.selectedNightLord && derived.uniqueNightLords.length === 1
         ? derived.uniqueNightLords[0]
         : null;
+
+    // "不明" (Unknown / Unselected) default option
+    const unknownLabel = state.lang === "en" ? "Unselected" : "不明";
+    const unknownBtn = document.createElement("button");
+    unknownBtn.type = "button";
+    unknownBtn.className = `selector-item ${state.selectedNightLord === null && !inferredLord ? "active" : ""}`;
+    unknownBtn.dataset.lord = "";
+    const unknownImg = document.createElement("img");
+    unknownImg.className = "selector-thumb";
+    unknownImg.src = getAssetUrl("nightLord", "unnamed");
+    unknownImg.alt = unknownLabel;
+    attachImageFallback(unknownImg, "?", "#1e293b", "#9ca3af");
+    const unknownSpan = document.createElement("span");
+    unknownSpan.className = "selector-name";
+    unknownSpan.textContent = unknownLabel;
+    unknownBtn.appendChild(unknownImg);
+    unknownBtn.appendChild(unknownSpan);
+    unknownBtn.addEventListener("click", () => handleNightLordChange(null));
+    dom.lordSelectorGrid.appendChild(unknownBtn);
 
     allNightLords.forEach((lordKey) => {
       const isSelected = state.selectedNightLord === lordKey;
@@ -719,6 +769,35 @@
       btn.appendChild(span);
       btn.addEventListener("click", () => handleNightLordChange(lordKey));
       dom.lordSelectorGrid.appendChild(btn);
+    });
+
+    // 2. Map (Shifting Earth) Selector Grid (6 maps, default: "Default")
+    const mapImages = state.coordinatesMaster?.mapImages || [];
+    dom.mapSelectorGrid.innerHTML = "";
+    dom.currentMapLabel.textContent = getMapDisplayName(state.currentMap);
+
+    mapImages.forEach(({ filename }) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = `selector-item ${state.currentMap === filename ? "active" : ""}`;
+      btn.dataset.map = filename;
+      btn.setAttribute("role", "radio");
+      btn.setAttribute("aria-checked", String(state.currentMap === filename));
+
+      const img = document.createElement("img");
+      img.className = "selector-thumb";
+      img.src = getAssetUrl("mapIcon", filename);
+      img.alt = filename;
+      attachImageFallback(img, filename.slice(0, 2), "#1e293b", "#f59e0b");
+
+      const span = document.createElement("span");
+      span.className = "selector-name";
+      span.textContent = getMapDisplayName(filename);
+
+      btn.appendChild(img);
+      btn.appendChild(span);
+      btn.addEventListener("click", () => handleMapChange(filename));
+      dom.mapSelectorGrid.appendChild(btn);
     });
 
     // 3. Night Lord Weakness & Resistance Card
@@ -983,15 +1062,19 @@
           const single = candidates[0];
           const img = document.createElement("img");
           img.className = "pin-img";
-          img.src = getAssetUrl("icon", single.type);
+          img.src = getMajorBaseIconUrl(
+            single.type,
+            single.element,
+            baseKey,
+            effectivePattern?.specialEvent || null
+          );
           img.alt = single.type;
           attachImageFallback(img, single.type.slice(0, 2), "#1f2937", "#f59e0b");
           pin.appendChild(img);
 
-          if (single.element) {
+          if (single.element && activeLordWeakness && activeLordWeakness === single.element) {
             const elemWrap = document.createElement("div");
-            const isWeakMatch = activeLordWeakness && activeLordWeakness === single.element;
-            elemWrap.className = `pin-element-badge ${isWeakMatch ? "weakness-match" : ""}`;
+            elemWrap.className = "pin-element-badge weakness-match";
             const elemImg = document.createElement("img");
             elemImg.src = getAssetUrl("element", single.element);
             elemImg.alt = single.element;
@@ -1218,13 +1301,18 @@
     // 3H. Scale-Bearing Merchant & Great Hollow Town Merchant (Master Data Extension)
     if (pat.scaleBearingMerchant?.x && pat.scaleBearingMerchant?.y) {
       const m = pat.scaleBearingMerchant;
-      const pin = createPinContainer(m.x, m.y, 32, 16);
+      const mx = state.currentMap === "大空洞" ? (m.x_sf ?? m.x) : m.x;
+      const my = state.currentMap === "大空洞" ? (m.y_sf ?? m.y) : m.y;
+      const pin = createPinContainer(mx, my, 48, 24);
       pin.dataset.scaleMerchant = m.place;
       pin.title = `${ui("scaleMerchantLabel")}: ${m.place}`;
       const img = document.createElement("img");
       img.className = "pin-img";
-      img.src = createSvgDataUri("商", "#78350f", "#f59e0b", "#fef3c7");
+      img.src = getAssetUrl("seedFinder", "buildingIcons/ScaleBearingMerchant_v2.webp");
       img.alt = ui("scaleMerchantLabel");
+      img.style.objectPosition = "center";
+      img.style.transform = "scale(2.2)";
+      attachImageFallback(img, "商", "#78350f", "#f59e0b");
       pin.appendChild(img);
       const lbl = document.createElement("div");
       lbl.className = "pin-label pin-label-amber";
@@ -1236,13 +1324,16 @@
 
     if (pat.greatHollowMerchant?.x && pat.greatHollowMerchant?.y) {
       const m = pat.greatHollowMerchant;
-      const pin = createPinContainer(m.x, m.y, 32, 16);
+      const mx = m.x_sf ?? m.x;
+      const my = m.y_sf ?? m.y;
+      const pin = createPinContainer(mx, my, 32, 16);
       pin.dataset.ghMerchant = m.place;
       pin.title = `${ui("ghTownMerchantLabel")}: ${m.place}`;
       const img = document.createElement("img");
       img.className = "pin-img";
-      img.src = createSvgDataUri("街商", "#064e3b", "#10b981", "#d1fae5");
+      img.src = getAssetUrl("seedFinder", "resultOverlay/gh_merchant.webp");
       img.alt = ui("ghTownMerchantLabel");
+      attachImageFallback(img, "街商", "#064e3b", "#10b981");
       pin.appendChild(img);
       const lbl = document.createElement("div");
       lbl.className = "pin-label pin-label-cyan";

@@ -354,9 +354,6 @@
     dom.uiSpecialEventLabel = document.getElementById("ui-special-event-label");
     dom.statusSpecialEventValue = document.getElementById("status-special-event-value");
 
-    dom.sidebarMultiBox = document.getElementById("sidebar-multiple-candidates");
-    dom.uiMultiCandidatesText = document.getElementById("ui-multi-candidates-text");
-    dom.sidebarCandidateButtons = document.getElementById("sidebar-candidate-buttons");
     dom.activeFiltersList = document.getElementById("active-filters-list");
 
     dom.uiMapHeading = document.getElementById("ui-map-heading");
@@ -698,7 +695,6 @@
     dom.uiCandidateLabel.textContent = ui("candidateLabel");
     dom.uiCurrentLordLabel.textContent = t("nightLord");
     dom.uiSpecialEventLabel.textContent = t("specialEvent");
-    dom.uiMultiCandidatesText.textContent = t("multipleCandidates");
     dom.hudMultiLabel.textContent = t("multipleCandidates");
 
     dom.uiMapHeading.textContent = ui("mapHeading");
@@ -718,10 +714,10 @@
     const allNightLords = Object.keys(state.nightLordsMaster || {});
     dom.lordSelectorGrid.innerHTML = "";
 
-    const inferredLord =
-      !state.selectedNightLord && derived.uniqueNightLords.length === 1
-        ? derived.uniqueNightLords[0]
-        : null;
+    const inferredLord = !state.selectedNightLord
+      ? derived.effectivePattern?.nightLord ||
+        (derived.uniqueNightLords.length === 1 ? derived.uniqueNightLords[0] : null)
+      : null;
 
     // "不明" (Unknown / Unselected) default option
     const unknownLabel = state.lang === "en" ? "Unselected" : "不明";
@@ -845,6 +841,7 @@
 
     const resolvedLordKey =
       state.selectedNightLord ||
+      effective?.nightLord ||
       (derived.uniqueNightLords.length === 1 ? derived.uniqueNightLords[0] : null);
     const lordDisplay = resolvedLordKey ? t(resolvedLordKey) : "???";
 
@@ -887,30 +884,23 @@
       dom.hudStepHint.textContent = ui("hintSelectMajor");
     }
 
-    // Multiple Candidates UI (both HUD & Sidebar)
+    // Multiple Candidates UI (Map Top HUD)
     if (remaining > 1 && derived.hasIdenticalMajorBasesAcrossFiltered) {
       dom.hudMultiPill.classList.remove("hidden");
-      dom.sidebarMultiBox.classList.remove("hidden");
-
-      const renderCandidateBtns = (container) => {
-        container.innerHTML = "";
-        derived.filteredMapData.forEach((_, idx) => {
-          const btn = document.createElement("button");
-          btn.type = "button";
-          btn.className = `candidate-idx-btn ${state.selectedPatternIndex === idx ? "active" : ""}`;
-          btn.textContent = String(idx + 1);
-          btn.addEventListener("click", () => {
-            state.selectedPatternIndex = idx;
-            renderAll();
-          });
-          container.appendChild(btn);
+      dom.hudMultiButtons.innerHTML = "";
+      derived.filteredMapData.forEach((_, idx) => {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = `candidate-idx-btn ${state.selectedPatternIndex === idx ? "active" : ""}`;
+        btn.textContent = String(idx + 1);
+        btn.addEventListener("click", () => {
+          state.selectedPatternIndex = idx;
+          renderAll();
         });
-      };
-      renderCandidateBtns(dom.hudMultiButtons);
-      renderCandidateBtns(dom.sidebarCandidateButtons);
+        dom.hudMultiButtons.appendChild(btn);
+      });
     } else {
       dom.hudMultiPill.classList.add("hidden");
-      dom.sidebarMultiBox.classList.add("hidden");
     }
 
     // Active filter chips
@@ -1019,7 +1009,9 @@
     dom.layerMajorBases.innerHTML = "";
     if (state.selectedSpawnPoint) {
       const activeLordKey =
-        state.selectedNightLord || (uniqueNightLords.length === 1 ? uniqueNightLords[0] : null);
+        state.selectedNightLord ||
+        effectivePattern?.nightLord ||
+        (uniqueNightLords.length === 1 ? uniqueNightLords[0] : null);
       const activeLordWeakness = activeLordKey
         ? state.nightLordsMaster?.[activeLordKey]?.weakness
         : null;
